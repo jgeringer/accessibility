@@ -1,0 +1,19 @@
+/*Visually Hidden CSS*/
+.visuallyHidden{
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*Skip Link*/
+.skip-link{
+    left:-100%;
+    position: absolute;
+}
+.skip-link:focus{
+    left: 50%;
+}
