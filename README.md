@@ -112,3 +112,26 @@ Level A 1.4.2 - Audio Control: If any audio on the page plays automatically for 
 Video:
 Captions: embedded, always visible
 Closed: can turn on/off
+
+##Responsive Web Design
+Switching context:
+
+Order of content:
+Flexbox order
+Level A 1.3.2 - Meaningful Sequence: When the sequence in which content is presented affects it's meaning, a correct reading sequence can be programatically determined.
+Meaning... Visual order must match DOM order.
+
+Focus order:
+Level A 3.2.1 - On Focus: When any component receives focus, it does not initiate a change of context.
+State: after user put's in two char's in state, then it autofocuses to the next field. Not good...
+
+Additional responsive guidelines:
+Off screen content, meaning: left-100% is still focusable in the screenreader. To make it not focusable, make it display none. Just because you dont see it, doesnt mean that it on the screen reader.
+For example: Mobile menu
+
+Proper ways to accessibly hide content:
+hidden attibute:
+[hidden]{display:none;} //use js to add the 'hidden' attibute to an element. [hidden] attribute is IE11+, but if you use the css, then that works in older browsers.
+display:none;
+visibility:hidden;
+aria-hidden:true; //just hidden for screen readers.
