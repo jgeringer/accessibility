@@ -29,6 +29,8 @@ Each guideline has 3 levels of conformance: A, AA, AAA
 ##How to Test a Screen Reader
 Built into the OS: Mac & Windows
 
+*TO DO: SHOW HOW A SCREEN READER WORKS HERE*
+
 ##Basic things to consider when developing
 Lot's of stuff we already do as Frontenders...
 
@@ -50,7 +52,7 @@ Use relative CSS units: rem or em.
 Level A 1.3.1 - Info and Relationships
 Chunck content into landmarks. Users with assistive technologies use this to navigate: 
 header, nav, main, footer, aside. 
-One ```html<main>```, one ```html<h1>``` per page.
+One ```<main>```, one ```<h1>``` per page.
 
 ###Lists
 Level A 1.3.1 - Info and Relationships:
@@ -143,9 +145,9 @@ Images:
 * Instead, describe the meaning or purpose of the image.
 
 SVG: 
-    Add role="img"
-    Use the ```html<title>``` tag
-    Use aria-labelledby referencing the title
+    Add ```role="img"```
+    Use the ```<title>``` tag
+    Use ```aria-labelledby``` referencing the title
 
 ###Tables
 Use table grouping: thead, tfoot, tbody
@@ -155,8 +157,5 @@ Avoid complex tables: Not great experience for screen readers.
 Off screen content, meaning: left-100% is still focusable in the screenreader. To make it not focusable, make it display none. Just because you dont see it, doesnt mean that it on the screen reader.
 
 ##Resources:
-Pluralsight:
-[https://app.pluralsight.com/library/courses/web-accessibility-meeting-guidelines/exercise-files]
-
-WCAG 2: Quick Reference Guide: 
-[https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize]
+* [Pluralsight - Meeting Web Accessibility Guidelines](https://app.pluralsight.com/library/courses/web-accessibility-meeting-guidelines/exercise-files)
+* [WCAG 2: Quick Reference Guide](https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize)
