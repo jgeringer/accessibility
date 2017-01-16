@@ -26,13 +26,20 @@ Each guideline has 3 levels of conformance: A, AA, AAA
 * Level AA: Biggest and most common barriers
 * Level AAA: Highest level of accessibility
 
+![wcag2](voice-over/wcag2.png)
+
 ##How to Test a Screen Reader
 Built into the OS: Mac & Windows
+![headings](voice-over/headings.png)
 
 ##Basic things to consider when developing
 Lot's of stuff we already do as Frontenders...
 
 ###Document and Structure...
+Landmarks
+![search landmark](voice-over/landmarks.png)
+![aside](voice-over/complimentary.png)
+
 Checkpoint Level A 3.1.1 - Language of page
 ```html
 <html lang="en">
@@ -61,6 +68,8 @@ Use Lists:
 Benefits for screen readers:
 Discoverable, Type of List, Total Items, Item Index
 
+![list](voice-over/list.png)
+
 ###Navigation and Skip Links
 Level A 2.4.1 - Bypass Blocks: 
 Add a Skip Link to main content
@@ -68,12 +77,13 @@ Add a Skip Link to main content
 <a class="skip-link" href="#main">Skip to main</a>...
 <main id="main">
 ```
-![skip-to-main](voice-over/skip-to-main.png)
+![skip to main](voice-over/skip-to-main.png)
 
 Level A 2.4.4 - Link Purpose:
 ```html
 <a href="#">Read More <span class="visuallyHidden"> on our products page</span></a>
 ```
+![read more](voice-over/read-more.png)
 
 Level AA 2.4.5 - Muliple Ways 
 Provide more than one way to locate a page on the site. Either via Search or a Sitemap.
@@ -132,6 +142,8 @@ Good Practice:
 </fieldset>
 ```
 
+![fieldset](voice-over/fieldset.png)
+
 ###Media
 Level A 1.1.1 - Non-text Content: 
 All non-text content that is presented tot he user has a text alternative that serves the equivalent purpose.
@@ -148,9 +160,12 @@ SVG:
     Use the ```<title>``` tag
     Use ```aria-labelledby``` referencing the title
 
+![hero image](voice-over/hero-image.png)
+
 ###Tables
 Use table grouping: thead, tfoot, tbody
 Avoid complex tables: Not great experience for screen readers.
+![tables](voice-over/table.png)
 
 ###RWD
 Off screen content, meaning: left-100% is still focusable in the screenreader. To make it not focusable, make it display none. Just because you dont see it, doesnt mean that it on the screen reader.
