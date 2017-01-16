@@ -179,5 +179,6 @@ Off screen content, meaning: left-100% is still focusable in the screenreader. T
 * [Pluralsight - Meeting Web Accessibility Guidelines](https://app.pluralsight.com/library/courses/web-accessibility-meeting-guidelines/exercise-files)
 * [WCAG 2: Quick Reference Guide](https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize)
 * [Presentation Notes](https://github.com/jgeringer/accessibility/blob/master/PRESENTATION.md)
-* [Demo- Web Design](http://accessibility.paperplane.io/Acme.html)
-* [Demo- PiedPiper](http://accessibility.paperplane.io/PiedPiper.html)
+* [Video Demo - Voice Over](voice-over/voiceover-demo-final.mp4)
+* [Web Demo - Web Design](http://accessibility.paperplane.io/Acme.html)
+* [Web Demo - PiedPiper](http://accessibility.paperplane.io/PiedPiper.html)
