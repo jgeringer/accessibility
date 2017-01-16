@@ -1,5 +1,7 @@
 # accessibility
 
+* [Presentation Notes](https://github.com/jgeringer/accessibility/blob/master/PRESENTATION.md)
+
 Notes taken from:
 https://app.pluralsight.com/library/courses/web-accessibility-meeting-guidelines/exercise-files
 
