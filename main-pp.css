@@ -18,6 +18,10 @@
     left: 50%;
 }
 
+a{
+    color:#1a6d2c;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -30,7 +34,7 @@ body{
     background: #fff;
 }
 header{
-    background: #bbbbe0;
+    background: #dadada;
     padding: 10px;
     overflow: hidden;
     position: relative;
@@ -102,7 +106,7 @@ button{
     font-size: 1rem;
     border: 0;
     border-radius: 4px;
-    background: #bbbbe0;
+    background: #35a94f;
     margin-top: 10px;
 }
 .hero-image{

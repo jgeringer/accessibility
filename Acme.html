@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>ACME | About Us</title>
+        <title>ACME Web Design | Home</title>
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scale=no" />
@@ -16,7 +16,7 @@
                 <!--1.3.1 - Info and Relationships - Convert to Unordered Lists to make it easier to navigate for screen readers-->
                 <ul>
                     <li><a href="#" title="Home">Home</a></li><!--Replace images with text to improve readability-->
-                    <li><a href="#" title="About">About</a></li>
+                    <li><a href="#" title="Design">Design</a></li>
                     <li><a href="#" title="Contact">Contact</a></li>
                 </ul>
             </nav>
@@ -30,44 +30,15 @@
         <div class="main-wrapper">
             <img src="img/hero.jpg" alt="Web Design is Home for Us" class="hero-image" /><!--hero image-->
             <main id="main" tabindex="-1"><!--Level A 2.4.1 - Bypass Blocks: Skip Link-->
-                <h1>About Us</h1>
-                <p>Text about us...</p>
-                <ol>
-                    <li>Bullet one</li>
-                    <li>Bullet two</li>
-                    <li>Bullet three</li>
-                </ol>
-
-                <h2>Who We are</h2>
+                <h1>About ACME Web Design</h1>
+                <p>We transform research and insight into memorable web design, development and brand strategy. Our skill include:</p>
                 <ul>
-                    <li>Person one</li>
-                    <li>Person two</li>
-                    <li>Person three</li>
+                    <li>Design</li>
+                    <li>Development</li>
+                    <li>Maintenance</li>
                 </ul>
 
-                <h2>FAQ</h2>
-                <dl>
-                    <dt>Can you help me get a domain name?</dt>
-                    <dd>
-                        Yes, we can help you get a domain name.
-                        <a href="#">Read More</a><!--Level A 2.4.4 - Link Purpose: "Read More" shows up int he screen reader. Better to specify what it is you are navigating to.-->
-                    </dd>
-
-                    <dt>
-                        Do you use semicolons in your JavaScript?</dt>
-                    <dd>
-                        Yes, if it's good for Tim Berners-Lee, then it's good for us.
-                        <a href="#">Read More <span class="visuallyHidden"> on our products page</span></a><!--Level A 2.4.4 - Link Purpose: Improvement over above.-->
-                    </dd>
-                </dl>
-
-                <h2>What We Do</h2>
-                <p>Text about what we do...</p>
-
-                <h3>How We Do It</h2>
-                <p>Subsection of What We Do, explaining how we do it...</p>
-
-                <h2>Our Products</h1>
+                <h2>Pricing Options</h1>
                 <table>
                     <caption>List of products</caption>
                     <thead>
@@ -84,11 +55,6 @@
                             <td>$199/yr</td>
                         </tr>
                         <tr>
-                            <th scope="row">Slightly More Advanced Web Server</th>
-                            <td>A tad bit better of a server to host your site</td>
-                            <td>$299/yr</td>
-                        </tr>
-                        <tr>
                             <th scope="row">An Even Better Web Server</th>
                             <td>Awesome server to host your site</td>
                             <td>$399/yr</td>
@@ -100,15 +66,31 @@
                         </tr>
                     </tbody>
                 </table>
+                
+                <h2>FAQ</h2>
+                <dl>
+                    <dt>Can you help me get a domain name?</dt>
+                    <dd>
+                        Yes, we can help you get a domain name.
+                        <a href="#">Read More <span class="visuallyHidden"> about getting a domain name</span></a>
+                    </dd>
+
+                    <dt>
+                        Do you use semicolons in your JavaScript?</dt>
+                    <dd>
+                        Yes, if it's good for Tim Berners-Lee, then it's good for us.
+                        <a href="#">Read More <span class="visuallyHidden"> about our technology</span></a><!--Level A 2.4.4 - Link Purpose: Improvement over above.-->
+                    </dd>
+                </dl>
 
             </main>
 
             <aside>
                 <nav aria-label="page">
                     <ol>
-                        <li><a href="#" title="Sublink 1">Sublink 1</a></li>
-                        <li><a href="#" title="Sublink 2">Sublink 2</a></li>
-                        <li><a href="#" title="Sublink 3">Sublink 3</a></li>
+                        <li><a href="#" title="View Case Studies">View Case Studies</a></li>
+                        <li><a href="#" title="Our Approach">Our Approach</a></li>
+                        <li><a href="#" title="News">News</a></li>
                     </ol>
                 </nav>
 
@@ -141,7 +123,6 @@
                         <input id="phone" type="tel" name="phone" required />
                     </fieldset>
 
-                    <!--Good-->
                     <fieldset>
                         <legend>Contact Phone Number</legend><!--Legend is announced after every focused element for a screen reader-->
                         <label><input type="radio" type="phone-type" name="home"> Home</label>
@@ -149,7 +130,7 @@
                         <label><input type="radio" type="phone-type" name="cell"> Cell</label>
                     </fieldset>
 
-                    <button>Submit</button>
+                    <button>Contact Us</button>
                     
                 </form>
 
@@ -158,14 +139,19 @@
 
         <footer>
             <nav aria-label="site">
-                <a href="#" title="Footer Link 1">Footer Link 1</a>
-                <a href="#" title="Footer Link 2">Footer Link 2</a>
-                <a href="#" title="Footer Link 3">Footer Link 3</a>
+                <ul>
+                    <li><a href="#" title="Home">Home</a></li>
+                    <li><a href="#" title="Design">Design</a></li>
+                    <li><a href="#" title="Contact">Contact</a></li>
+                    <li><a href="#" title="View Case Studies">View Case Studies</a></li>
+                    <li><a href="#" title="Our Approach">Our Approach</a></li>
+                    <li><a href="#" title="News">News</a></li>
+                    <li><a href="sitemap.html" title="Sitemap">Sitemap</a></li>
+                </ul>
             </nav>
-            <p>
-                <a href="sitemap.html">Sitemap</a><!--Level AA 2.4.5 - Muliple Ways: Provide more than one way to locate a page on the site. Either via Search or a Sitemap.-->
-                <!--Level A 2.4.4 - Link Purpose: Basically, don't use "click here" as the link. Better to specify what it is you are navigating to.-->
-            </p>
+            <div>
+                <p>ACME Web Design Company<br />123 Main Street, Suite 700<br />Chicago, Illinois 60654</p>
+            </div>
         </footer>
 
         </div>

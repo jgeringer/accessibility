@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Pied Piper | Home</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scale=no" />
+        <link href="main-pp.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="outer-wrapper">
+        <header>
+            <img src="img/logo-pied-piper.png" alt=""/>
+            <a class="skip-link" href="#main">Skip to main</a><!--Level A 2.4.1 - Bypass Blocks: Skip Link to main content-->
+            <nav aria-label="site">
+                <!--1.3.1 - Info and Relationships - Convert to Unordered Lists to make it easier to navigate for screen readers-->
+                <ul>
+                    <li><a href="#" title="Home">Home</a></li><!--Replace images with text to improve readability-->
+                    <li><a href="#" title="About">About</a></li>
+                    <li><a href="#" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <form action="/search" method="POST" role="search"><!--"search" is a landmark role making it easy for screen readers.-->
+                <label for="query">Search</label>
+                <input type="search" id="query" name="search" /><!--Level AA 2.4.5 - Muliple Ways: Provide more than one way to locate a page on the site. Either via Search or a Sitemap.-->
+                <button>Search</button>
+            </form>
+        </header>
+
+        <div class="main-wrapper">
+            <img src="img/hero-pp.jpg" alt="Compression is our passion" class="hero-image" /><!--hero image-->
+            <main id="main" tabindex="-1"><!--Level A 2.4.1 - Bypass Blocks: Skip Link-->
+                <h1>Pied Piper Technology</h1>
+                <p>Pied Piper takes all your files and makes them smaller!</p>
+                <p>Compress and Sync:</p>
+                <ol>
+                    <li>All Your Devices</li>
+                    <li>All Your Files</li>
+                </ol>
+
+                <h2>Pricing</h1>
+                <table>
+                    <caption>List of products</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Basic Compression</th>
+                            <td>Compress up to 1GB of Data</td>
+                            <td>$199/yr</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Advanced Compression</th>
+                            <td>Compress up to 5GB of Data</td>
+                            <td>$399/yr</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Not yo moma's Compression</th>
+                            <td>Compress all the things!</td>
+                            <td>$400/yr</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>FAQ</h2>
+                <dl>
+                    <dt>
+                        What is Pied Piper?</dt>
+                    <dd>
+                        A Middle-Out Compression Solution Making Data Storage Problems Smaller.
+                        <a href="#">Read More <span class="visuallyHidden"> about all of our services</span></a>
+                    </dd>
+                    <dt>How do we do it?</dt>
+                    <dd>
+                        Using our revolutionary middle-out algorithm, we find long-range structure in your files to create the most efficient encoding of your data. It's just as exciting as it sounds.
+                        <a href="#">Read More <span class="visuallyHidden"> about our compression</span></a>
+                    </dd>
+                </dl>
+
+            </main>
+
+            <aside>
+                <nav aria-label="page">
+                    <ol>
+                        <li><a href="#" title="View Case Studies">View Case Studies</a></li>
+                        <li><a href="#" title="Our Approach">Our Approach</a></li>
+                        <li><a href="#" title="News">News</a></li>
+                    </ol>
+                </nav>
+
+                <form id="contact" action="/contact" method="POST" novalidate>
+
+                    <!--
+                    <section id="errors" class="visuallyHidden" aria-live="assertive" tabindex="-1">
+                        <ol>
+                            <li><a href="#name" class="visuallyHidden">Name cannot be empty</a></li>
+                        </ol>
+                    </section>
+                    -->
+
+                    <fieldset>
+                        <legend>Contact</legend>
+
+                        <label for="name">
+                            Name (Required):
+                            <span class="error-message visuallyHidden">Name cannot be empty</span><!--display none by default-->
+                        </label>
+                        <input id="name" type="text" name="name" required aria-invalid="true" />
+
+                        <label for="email" aria-live="assertive"><!--to validate on blur-->
+                            Email (Required):
+                            <span class="error-message visuallyHidden">Name cannot be empty</span>
+                        </label>
+                        <input id="email" type="email" name="email" required />
+
+                        <label for="phone">Phone (Required):</label>
+                        <input id="phone" type="tel" name="phone" required />
+                    </fieldset>
+
+                    <!--Good-->
+                    <fieldset>
+                        <legend>Contact Phone Number</legend><!--Legend is announced after every focused element for a screen reader-->
+                        <label><input type="radio" type="phone-type" name="home"> Home</label>
+                        <label><input type="radio" type="phone-type" name="work"> Work</label>
+                        <label><input type="radio" type="phone-type" name="cell"> Cell</label>
+                    </fieldset>
+
+                    <button>Submit</button>
+                    
+                </form>
+
+            </aside>
+        </div>
+
+        <footer>
+            <nav aria-label="site">
+                <ul>
+                    <li><a href="#" title="Home">Home</a></li>
+                    <li><a href="#" title="About">About</a></li>
+                    <li><a href="#" title="Contact">Contact</a></li>
+                    <li><a href="#" title="View Case Studies">View Case Studies</a></li>
+                    <li><a href="#" title="Our Approach">Our Approach</a></li>
+                    <li><a href="#" title="News">News</a></li>
+                    <li><a href="sitemap.html" title="Sitemap">Sitemap</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p>Pied Piper Company<br />123 Main Street, Suite 700<br />Chicago, Illinois 60654</p>
+            </div>
+        </footer>
+
+        </div>
+
+    </body>
+</html>
