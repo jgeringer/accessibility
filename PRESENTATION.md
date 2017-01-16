@@ -29,8 +29,6 @@ Each guideline has 3 levels of conformance: A, AA, AAA
 ##How to Test a Screen Reader
 Built into the OS: Mac & Windows
 
-*TO DO: SHOW HOW A SCREEN READER WORKS HERE*
-
 ##Basic things to consider when developing
 Lot's of stuff we already do as Frontenders...
 
@@ -70,6 +68,7 @@ Add a Skip Link to main content
 <a class="skip-link" href="#main">Skip to main</a>...
 <main id="main">
 ```
+![skip-to-main](voice-over/skip-to-main.png)
 
 Level A 2.4.4 - Link Purpose:
 ```html
