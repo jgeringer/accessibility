@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>About | Accessibility</title>
+        <title>ACME | About Us</title>
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scale=no" />
         <link href="main.css" rel="stylesheet" />
     </head>
     <body>
+        <div class="outer-wrapper">
         <header>
             <img src="img/logo.png" alt=""/>
             <a class="skip-link" href="#main">Skip to main</a><!--Level A 2.4.1 - Bypass Blocks: Skip Link to main content-->
@@ -27,8 +28,9 @@
         </header>
 
         <div class="main-wrapper">
+            <img src="img/hero.jpg" alt="Web Design is Home for Us" class="hero-image" /><!--hero image-->
             <main id="main" tabindex="-1"><!--Level A 2.4.1 - Bypass Blocks: Skip Link-->
-                <h1>About</h1>
+                <h1>About Us</h1>
                 <p>Text about us...</p>
                 <ol>
                     <li>Bullet one</li>
@@ -59,14 +61,46 @@
                     </dd>
                 </dl>
 
-                <h3>Meet the Staff</h2>
-                <p>Text the subsection of Who We Are. About the staff...</p>
-
                 <h2>What We Do</h2>
                 <p>Text about what we do...</p>
 
-                <h2>Why We Do It</h2>
-                <p>Text about why we do it...</p>
+                <h3>How We Do It</h2>
+                <p>Subsection of What We Do, explaining how we do it...</p>
+
+                <h2>Our Products</h1>
+                <table>
+                    <caption>List of products</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Basic Web Server</th>
+                            <td>Basic server to host your site</td>
+                            <td>$199/yr</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Slightly More Advanced Web Server</th>
+                            <td>A tad bit better of a server to host your site</td>
+                            <td>$299/yr</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">An Even Better Web Server</th>
+                            <td>Awesome server to host your site</td>
+                            <td>$399/yr</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Not yo moma's Web Server</th>
+                            <td>Hot damn, this is the server to host your site!</td>
+                            <td>$400/yr</td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </main>
 
             <aside>
@@ -77,6 +111,48 @@
                         <li><a href="#" title="Sublink 3">Sublink 3</a></li>
                     </ol>
                 </nav>
+
+                <form id="contact" action="/contact" method="POST" novalidate>
+
+                    <!--
+                    <section id="errors" class="visuallyHidden" aria-live="assertive" tabindex="-1">
+                        <ol>
+                            <li><a href="#name" class="visuallyHidden">Name cannot be empty</a></li>
+                        </ol>
+                    </section>
+                    -->
+
+                    <fieldset>
+                        <legend>Contact</legend>
+
+                        <label for="name">
+                            Name (Required):
+                            <span class="error-message visuallyHidden">Name cannot be empty</span><!--display none by default-->
+                        </label>
+                        <input id="name" type="text" name="name" required aria-invalid="true" />
+
+                        <label for="email" aria-live="assertive"><!--to validate on blur-->
+                            Email (Required):
+                            <span class="error-message visuallyHidden">Name cannot be empty</span>
+                        </label>
+                        <input id="email" type="email" name="email" required />
+
+                        <label for="phone">Phone (Required):</label>
+                        <input id="phone" type="tel" name="phone" required />
+                    </fieldset>
+
+                    <!--Good-->
+                    <fieldset>
+                        <legend>Contact Phone Number</legend><!--Legend is announced after every focused element for a screen reader-->
+                        <label><input type="radio" type="phone-type" name="home"> Home</label>
+                        <label><input type="radio" type="phone-type" name="work"> Work</label>
+                        <label><input type="radio" type="phone-type" name="cell"> Cell</label>
+                    </fieldset>
+
+                    <button>Submit</button>
+                    
+                </form>
+
             </aside>
         </div>
 
@@ -91,6 +167,8 @@
                 <!--Level A 2.4.4 - Link Purpose: Basically, don't use "click here" as the link. Better to specify what it is you are navigating to.-->
             </p>
         </footer>
+
+        </div>
 
     </body>
 </html>

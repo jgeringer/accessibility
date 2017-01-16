@@ -17,3 +17,90 @@
 .skip-link:focus{
     left: 50%;
 }
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #f1f1f1;
+}
+.outer-wrapper{
+    max-width: 1000px;
+    background: #fff;
+}
+header{
+    background: #bbbbe0;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+header img{
+    width:60px;
+}
+header nav, header form{
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    transform: translateY(-50%);
+}
+header form{
+    right:10px;
+    left:auto;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    float:left;
+    padding-right: 10px;
+}
+form[role="search"]{
+    float:right;
+}
+footer{
+    margin-top:40px;
+    padding: 10px;
+    background: lightgray;
+}
+.main-wrapper{
+    overflow: hidden;
+}
+main{
+    width:70%;
+    float: left;
+    padding-left: 1rem;
+}
+aside{
+    width:30%;
+    float: left;
+    padding-right: 1rem;
+}
+aside ol{
+    list-style-type: none;
+    padding:0;
+}
+
+aside input{
+    display: block;
+    margin:4px 0 10px 0;
+}
+aside input[type="radio"]{
+    display: inline;
+}
+table *{
+    text-align: left;
+}
+button{
+    padding: 5px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 4px;
+    background: #bbbbe0;
+    margin-top: 10px;
+}
+.hero-image{
+    width: 100%;
+}
