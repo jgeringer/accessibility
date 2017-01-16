@@ -15,6 +15,11 @@ State's that all content on a webpage should be:
 * Understandable
 * Robust
 
+* Users must be able to perceive the information being presented
+* Operate the interface
+* Understand the information 
+* Access the content as technologies advance
+
 ##Which to choose?
 ###WCAG 2.0 Level AA (meeting this guideline also covers all of Section 508)
 WCAG Pros:
