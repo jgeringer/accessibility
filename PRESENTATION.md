@@ -33,6 +33,12 @@ Each guideline has 3 levels of conformance: A, AA, AAA
 
 ##How to Test a Screen Reader
 Built into the OS: Mac & Windows
+
+Voice Over:
+* Start Voice Over
+* Option Control Down Arrow 
+* Then hit Right for each item until main content area
+
 ![headings](voice-over/headings.png)
 
 ##Basic things to consider when developing
