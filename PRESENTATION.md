@@ -36,7 +36,7 @@ Built into the OS: Mac & Windows
 
 Voice Over:
 * Start Voice Over
-* Option Control Down Arrow 
+* Option + Control + Shift + Down Arrow 
 * Then hit Right for each item until main content area
 
 ![headings](voice-over/headings.png)
